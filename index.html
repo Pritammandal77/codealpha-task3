@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Pritam Mandal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="part1">
+                <p>
+                    < Pritam />
+                </p>
+            </div>
+            <div class="part2">
+                <ul class="pcNav">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contactme">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="iconToOpenHamburger" onclick="HandleOpenHamburger()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="HamburgerDiv">
+                <ul class="Hamburgerul" onclick="HandleCloseHamburger()">
+                    <li id='xMark'>
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contactme">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <div class="mainBodyContainer" id="home">
+        <div class="bodyContainer1">
+            <div>
+                <h1 class="hello">Hello , It's Me</h1>
+                <h1 class="myName">Pritam Mandal</h1>
+                <div class="positionDiv">
+                    <h1 class="myRole">I am a <br class="brForNewLine"> <b id="typewriter">Frontend Developer</b><span
+                            class="cursor">|</span></h1>
+                </div>
+            </div>
+            <div class="social-buttons">
+                <div class="socialIcons">
+                    <a href="https://github.com/Pritammandal77" class="social-button github" target="_blank">
+                        <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19">
+                            <path
+                                d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pritam-mandal-871510281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        class="social-button linkedin" target="_blank">
+                        <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink">
+                            <g id="Icons" stroke="none" strokeWidth="1">
+                                <g transform="translate(-702.000000, -265.000000)">
+                                    <path
+                                        d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
+                                        id="LinkedIn">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/pritam_mandal_77/profilecard/?igsh=MWE5cXF5ZGpxam84eA=="
+                        class="social-button instagram" target="_blank">
+                        <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" strokeWidth="1">
+                                <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                                            id="instagram-[#167]">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+
+                <a href='Images/pritam-resume.pdf' download="Images/pritam-resume.pdf">
+                    <button class="button">
+                        <div class="ui">Download</div> CV
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="bodyContainer2">
+            <img src="Images/portfolio2.jpeg.jpg" alt="Sorry The Image is Not Available" class="myImg"/>
+        </div>
+    </div>
+
+
+
+    <!-- About Page -->
+
+    <div class="fullAboutPage" id="about">
+        <div class="aboutPart1">
+            <img src="Images/MyFullImg.jpg" alt="" class="aboutPageImg" />
+        </div>
+        <div class="aboutPart2">
+            <div class="aboutMe">
+                <h1>About Me</h1>
+                <p>Hi, I'm Pritam Mandal! I'm a dedicated frontend developer.  <br /> I am 20 years Old , Living in chandrapur , Maharashtra
+                    with a strong passion for creating intuitive and visually appealing
+                    web applications.
+                    With expertise in modern web development technologies, I focus on delivering high-quality,
+                    user-centric solutions that enhance user experience and performance. I like solving
+                    problems and continuously learning new trends in frontend development.
+                  
+                </p>
+            </div>
+            <div class="aboutPageSkills">
+                <h1>Skills</h1>
+                <div class="AboutSkillsDiv">
+                    <h3><b>languages </b> : HTML , CSS , Javascript , C++ , SQL </h3>
+                    <h3><b>Backend </b> : Firebase</h3>
+                    <h3><b>Libraries</b> : React.js , Redux Toolkit , Tailwind CSS , BootStrap</h3>
+                    <h3><b>Tools</b> : Vs Code , Git & Github</h3>
+                    <h3><b>Others </b>: Problem Solving , Communication , Animations , etc</h3>
+                </div>
+
+            </div>
+            <div class="aboutPageCertifications">
+                <h1>Certifications</h1>
+                <div class="certificationsDiv">
+                    <h3><b>IBM : </b> Web Development Fundamentals</h3>
+                    <h3><b>Accenture & Forage : </b>Developer & Technolgy Job Simulation</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Skills Page -->
+
+    <div class="skillsContainer" id="skills">
+        <h1 class="skillsHead">Skills</h1>
+
+        <div class='skillsDiv'>
+
+            <div class='languages-Frameworks'>
+                <div class='languagesDiv'>
+                    <h1>Languages</h1>
+                    <div class='languagesLogoDiv'>
+                        <div class='individualskill'>
+                            <img src="Images/html.png" alt="" class='skillslogoimg' />
+                            <p>HTML</p>
+                        </div>
+
+                        <div class='individualskill'>
+                            <img src="Images/css.png" alt="" class='skillslogoimg' />
+                            <p>CSS</p>
+                        </div>
+
+                        <div class='individualskill'>
+                            <img src="Images/js.png" alt="" class='skillslogoimg' />
+                            <p>Javascript</p>
+                        </div>
+
+                        <div class='individualskill'>
+                            <img src="Images/sql.png" alt="" class='skillslogoimg' />
+                            <p>SQl</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='frameworksDiv'>
+                    <h1>Libraries & Frameworks</h1>
+
+                    <div class='frameworksLogoDiv'>
+                        <div class='individualskill'>
+                            <img src="Images/react.png" alt="" class='skillslogoimg' />
+                            <p>React</p>
+                        </div>
+
+                        <div class='individualskill'>
+                            <img src="Images/redux.png" alt="" class='skillslogoimg' />
+                            <p>Redux</p>
+                        </div>
+
+                        <div class='individualskill'>
+                            <img src="Images/tailwindcss.png" alt="" class='skillslogoimg' />
+                            <p>Tailwind CSS</p>
+                        </div>
+
+                        <div class='individualskill'>
+                            <img src="Images/bootstrap.png" alt="" class='skillslogoimg' />
+                            <p>Bootstrap</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class='otherSkiilsDiv'>
+
+                <h1>Other Skills</h1>
+
+                <div class='otherSkillsBox'>
+                    <div class='otherSkiilsDivPart1'>
+
+                        <h1>Tools</h1>
+
+                        <div class='individualOtherskill'>
+                            <img src="Images/git.png" alt="" class='skillslogoimg otherSkillsImg' />
+                            <p>Git</p>
+                        </div>
+
+                        <div class='individualOtherskill'>
+                            <img src="Images/github.png" alt="" class='skillslogoimg githubLogo otherSkillsImg' />
+                            <p>Github</p>
+                        </div>
+
+                        <div class='individualOtherskill'>
+                            <img src="Images/vscode.png" alt="" class='skillslogoimg otherSkillsImg' />
+                            <p>VS code</p>
+                        </div>
+
+                    </div>
+
+                    <div class='otherSkiilsDivPart2'>
+                        <h1>Others</h1>
+
+                        <div class='individualOtherskill'>
+                            <img src="Images/firebase.png" alt="" class='skillslogoimg otherSkillsImg' />
+                            <p>Firebase</p>
+                        </div>
+
+                        <div class='individualOtherskill'>
+                            <img src="Images/problemsolving.png" alt="" class='skillslogoimg otherSkillsImg' />
+                            <p>Problem Solving</p>
+                        </div>
+
+                        <div class='individualOtherskill'>
+                            <img src="Images/communication.png" alt="" class='skillslogoimg otherSkillsImg' />
+                            <p class='communication'>Communication</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects  -->
+
+    <div class="projectsPage" id="projects">
+        <h1 class="projectHeading">My Projects</h1>
+        <div class="projectsDiv">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJCuJEpFVYi-SFcwsK_9li9t9aQdfyrXxGyA&s"
+                    alt="" class="projectsImg" />
+                <h2>Recipe Gram</h2>
+                <p>It is a recipe App , You Can Search Any Recipes , View The
+                    Full Recipe , Its Ingredients
+                    Also You can save Your Favourite Recipes , Delete Recipes .
+                </p>
+                <button class="liveViewBtn submitButton">
+                    <a href="https://recipe-gram.netlify.app/" class="linkText" target="_blank">View</a>
+                </button>
+            </div>
+            <div class="card">
+                <img src="https://media.istockphoto.com/id/1465545513/photo/chatbot.jpg?s=612x612&w=0&k=20&c=3IZrVSv95FmcHt744wvcvZiml1LXTnEQimq_3V5CCbQ="
+                    alt="" class="projectsImg" />
+                <h2>Aura AI</h2>
+                <p>It Is A smart and interactive chatbot designed to provide
+                    quick, accurate, and engaging responses to users.
+                </p>
+                <button class="liveViewBtn submitButton">
+                    <a href="https://the-aura-ai.netlify.app/" class="linkText" target="_blank">view</a>
+                </button>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ZWQlo8v2szeR55CNOTMHZHTirPtsHEU2Qg&s"
+                    alt="" class="projectsImg" />
+                <h2>Personal Portfolio</h2>
+                <p>This is my portfolio website, Here you can find all the informations about me , Alos feel free to
+                    contact me.
+                </p>
+                <button class="liveViewBtn submitButton">
+                    <a href="" class="linkText" target="_blank">view</a>
+                </button>
+            </div>
+            <div class="card">
+                <img src="data:image/jpeg;base64,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"
+                    alt="" class="projectsImg" />
+                <h2>New Project</h2>
+                <p> New Project Coming soon
+                </p>
+                <button class="liveViewBtn submitButton">
+                    <a href=" " class="linkText" target="_blank">Soon</a>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Contact Page -->
+
+    <section class="ContactContainer" id="contactme">
+        <div class="contact-1">
+            <h1 class="contactHeading">Contact Me</h1>
+            <img src="Images/contactme.svg" alt="Sorry Image Can't Load" class="contactMeSvg" />
+            <div class="social-buttons contactSocialBtn">
+                <div class="socialIcons">
+                    <a href="https://github.com/Pritammandal77" class="social-button github" target="_blank">
+                        <svg class="cf-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 0 19 19">
+                            <path
+                                d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pritam-mandal-871510281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        class="social-button linkedin" target="_blank">
+                        <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink">
+                            <g id="Icons" stroke="none" strokeWidth="1">
+                                <g transform="translate(-702.000000, -265.000000)">
+                                    <path
+                                        d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
+                                        id="LinkedIn">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/pritam_mandal_77/profilecard/?igsh=MWE5cXF5ZGpxam84eA=="
+                        class="social-button instagram" target="_blank">
+                        <svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" strokeWidth="1">
+                                <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path
+                                            d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                                            id="instagram-[#167]">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+
+
+                <a href='Images/pritam-resume.pdf' download="Images/pritam-resume.pdf">
+                    <button class="button">
+                        <div class="ui">Download</div> CV
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-2">
+            <input type="hidden" name="access_key" value="3a512b62-8a7f-4108-808c-dcf4011a9bc1">
+
+            <div class="allFields">
+                <label htmlFor=""> Full Name</label>
+                <input type="text" name="name" required class="field fullname" placeholder="Enter your name">
+            </div>
+            <div class="allFields">
+                <label htmlFor="">Email Address</label>
+                <input type="email" name="email" required class="field email" placeholder="Enter email adress">
+            </div>
+            <div class="allFields">
+                <label htmlFor="">Your Message</label>
+                <textarea name="message" required class="field textArea" placeholder="Enter Your message"></textarea>
+
+            </div>
+
+            <button type="submit" class="submitButton">Submit Form</button>
+
+        </form>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="footerDiv">
+          <h1>Pritam Mandal</h1>
+          <p>&copy; 2025 Pritam Mandal. All Rights Reserved.</p>
+        </div>
+      </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
