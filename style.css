@@ -68,7 +68,7 @@ header {
     text-decoration: none;
 }
 
-.navBar a:hover{
+.navBar a:hover {
     border-bottom: 4px solid #4cff4c;
 }
 
@@ -324,7 +324,7 @@ li {
 
 
 .ui {
- 
+
     color: #4cf;
     display: inline;
 }
@@ -844,10 +844,9 @@ body {
     font-weight: 600;
 }
 
-.invertColor{
+.invertColor {
     filter: invert(100%);
 }
-
 
 @media screen and (max-width: 450px) {
     body {
@@ -855,12 +854,18 @@ body {
         width: 100vw;
     }
 
-    .skillsDiv {
+    .skillsMainHead {
+        font-size: 50px;
+    }
 
+    .skillsDiv {
         display: flex;
         flex-direction: column;
     }
 
+    .librariesHeading {
+        font-size: 27px;
+    }
 
     .SkillsBox {
         padding: 20px;
@@ -898,6 +903,10 @@ body {
 /* only for Iphone SE */
 @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
 
+    .skillsMainHead {
+        font-size: 50px;
+    }
+
     .SkillsBox {
         height: 40vh;
     }
@@ -911,7 +920,7 @@ body {
         width: 40px;
     }
 
-    .librariesHeading{
+    .librariesHeading {
         font-size: 27px;
     }
 
@@ -935,11 +944,16 @@ body {
         width: 90vw;
     }
 
-    .SkillsBox > h1{
+    .SkillsBox>h1 {
         font-size: 37px;
     }
+
     .skillsLogoDiv {
         width: 85vw;
+    }
+
+    .skillsMainHead {
+        font-size: 50px;
     }
 
     .individualskill {
@@ -963,6 +977,25 @@ body {
     }
 
 }
+
+/* iphone 12 pro */
+@media only screen and (max-width: 390px), 
+       only screen and (max-height: 844px) {
+        .SkillsBox {
+            padding: 15px;
+            height: auto;
+        }
+        .individualskill {
+            gap: 10px;
+            width: 20vw;
+    
+        }
+        .skillsLogoDiv {
+            width: 90vw;
+        }
+}
+
+
 
 /* For Projects */
 .projectsPage {
@@ -1418,6 +1451,7 @@ label {
     }
 
 }
+
 /* footer */
 
 footer {
@@ -1429,20 +1463,21 @@ footer {
     justify-content: center;
 }
 
-.footerDiv{
+.footerDiv {
     text-align: center;
 }
 
-.footerDiv h1{
+.footerDiv h1 {
     color: #4cff4c;
 
 }
+
 @media screen and (max-width: 450px) {
     footer {
         margin: 100px 0px 0px 0px;
     }
 
-    .footerDiv h1{
+    .footerDiv h1 {
         font-size: 23px;
     }
 }
