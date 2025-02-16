@@ -68,6 +68,9 @@ header {
     text-decoration: none;
 }
 
+.navBar a:hover{
+    border-bottom: 4px solid #4cff4c;
+}
 
 .part1 {
     font-size: 22px;
@@ -760,7 +763,7 @@ body {
     box-sizing: border-box;
 }
 
-.skillsHead {
+.skillsMainHead {
     font-size: 70px;
     font-weight: 550;
     width: 100%;
@@ -770,28 +773,23 @@ body {
 }
 
 .skillsDiv {
-    height: 80vh;
+    height: auto;
     width: 100vw;
     display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    row-gap: 40px;
+    padding: 0px 80px;
 }
 
-.languages-Frameworks {
-    height: 80vh;
-    width: 50%;
-    padding: 0px 20px;
+
+.SkillsBox {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 25px;
-
-}
-
-.languagesDiv {
-    display: flex;
-    flex-direction: column;
-    height: 38vh;
+    height: 33vh;
     background-color: #171717;
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -801,7 +799,7 @@ body {
     border-radius: 20px;
 }
 
-.languagesLogoDiv {
+.skillsLogoDiv {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -810,8 +808,8 @@ body {
 
 .individualskill {
     background-color: #070707;
-    height: 170px;
-    width: 20%;
+    height: 140px;
+    width: 22%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -820,6 +818,8 @@ body {
     padding: 10px;
     border-radius: 10px;
     gap: 10px;
+    cursor: pointer;
+
 }
 
 .individualskill:hover {
@@ -832,102 +832,10 @@ body {
     font-weight: 600;
 }
 
-.frameworksDiv {
-    display: flex;
-    flex-direction: column;
-    height: 38vh;
-    background-color: #1f1f1f;
-}
 
 
 .skillslogoimg {
-    width: 80px;
-}
-
-
-.frameworksDiv {
-    display: flex;
-    flex-direction: column;
-    height: 38vh;
-    background-color: #171717;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    padding: 30px;
-    justify-content: space-evenly;
-    border-radius: 20px;
-}
-
-.frameworksLogoDiv {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-}
-
-
-
-.otherSkiilsDiv {
-    width: 48vw;
-    height: 80vh;
-    background-color: #292929;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-
-.otherSkillsBox {
-    width: 90%;
-    height: 70vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 40px;
-}
-
-.otherSkiilsDivPart1 {
-    width: 47%;
-    height: 100%;
-    background-color: #1e1e1e;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.otherSkiilsDivPart2 {
-    width: 47%;
-    height: 100%;
-    background-color: #1e1e1e;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.individualOtherskill {
-    background-color: #070707;
-    height: 150px;
-    width: 45%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 10px;
-    border-radius: 10px;
-    gap: 10px;
-}
-
-.individualOtherskill:hover{
-    scale: 1.05;
+    width: 50px;
 }
 
 
@@ -936,59 +844,43 @@ body {
     font-weight: 600;
 }
 
-.githubLogo {
+.invertColor{
     filter: invert(100%);
 }
 
 
 @media screen and (max-width: 450px) {
-
-    .skillsContainer {
-        padding-top: 80px;
+    body {
         height: auto;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: #070707;
+        width: 100vw;
     }
 
     .skillsDiv {
+
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .skillsHead {
-        font-size: 50px;
-    }
-
-    .skillsDiv {
-        height: auto;
     }
 
 
-    .languages-Frameworks {
-        height: auto;
-        width: 94vw;
-        padding: 0px 0px;
+    .SkillsBox {
+        padding: 20px;
+        height: 25vh;
+        width: 90vw;
     }
 
-
-    .languagesDiv {
-        height: 30vh;
+    .skillsLogoDiv {
+        width: 85vw;
     }
-
-    .languagesLogoDiv {
-        width: 94vw;
-    }
-
 
     .individualskill {
-        height: 150px;
+        gap: 10px;
         width: 20vw;
+
     }
 
-    .skillslogoimg {
-        width: 60px;
+    .individualskill:hover {
+        scale: 1.05;
+        background-color: #0e0e0e;
     }
 
     .individualskill>p {
@@ -996,75 +888,32 @@ body {
     }
 
 
-    .frameworksDiv {
-        height: auto;
-    }
-
-    .frameworksLogoDiv {
-        width: 94vw;
-
-    }
-
     .skillslogoimg {
-        width: 60px;
+        width: 40px;
     }
-
-    .otherSkiilsDiv {
-        width: 94vw;
-
-    }
-
-    .individualOtherskill {
-        height: 150px;
-        width: 30vw;
-    }
-
-    .individualOtherskill>p {
-        font-size: 17px;
-        font-weight: 600;
-    }
-
-
-    .githubLogo {
-        filter: invert(100%);
-    }
-
 
 }
+
 
 /* only for Iphone SE */
 @media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
 
-    .languagesDiv {
+    .SkillsBox {
         height: 40vh;
     }
 
-    .frameworksDiv {
-        height: 45vh;
-
-    }
-
-
     .individualskill {
         height: 25vh;
-        width: 22vw;
-    }
-
-
-    .individualOtherskill {
-        height: 18vh;
-        width: 30vw;
-    }
-
-    .individualOtherskill>p {
-        font-size: 20px;
-        font-weight: 600;
+        width: 18vw;
     }
 
     .otherSkillsImg {
         width: 40px;
     }
 
+    .librariesHeading{
+        font-size: 27px;
+    }
 
 }
 
@@ -1075,85 +924,42 @@ body {
         width: 100vw;
     }
 
-    .skillsContainer {
-        height: auto;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: 80px;
-    }
-
     .skillsDiv {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 30px;
     }
 
-    .skillsDiv {
-        height: auto;
-    }
-
-
-    .languages-Frameworks {
-        height: auto;
-        width: 94vw;
-        padding: 0px 0px;
-    }
-
-
-    .languagesDiv {
+    .SkillsBox {
+        padding: 20px;
         height: 25vh;
+        width: 90vw;
     }
 
-    .languagesLogoDiv {
-        width: 94vw;
+    .SkillsBox > h1{
+        font-size: 37px;
     }
-
-
+    .skillsLogoDiv {
+        width: 85vw;
+    }
 
     .individualskill {
-        height: 15vh;
+        gap: 10px;
         width: 20vw;
+
     }
 
-    .skillslogoimg {
-        width: 90px;
+    .individualskill:hover {
+        scale: 1.05;
+        background-color: #0e0e0e;
     }
 
     .individualskill>p {
-        font-size: 24px;
+        font-size: 20px;
     }
 
-
-    .frameworksDiv {
-        height: 25vh;
-    }
-
-    .frameworksLogoDiv {
-        width: 94vw;
-
-    }
 
     .skillslogoimg {
-        width: 60px;
-    }
-
-    .otherSkiilsDiv {
-        width: 94vw;
-    }
-
-    .individualOtherskill {
-        height: 15vh;
-        width: 25vw;
-    }
-
-    .individualOtherskill>p {
-        font-size: 24px;
-        font-weight: 600;
-    }
-
-
-    .githubLogo {
-        filter: invert(100%);
+        width: 50px;
     }
 
 }
